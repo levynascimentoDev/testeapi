@@ -16,6 +16,15 @@ app.get("/teste", (req, res) => {
     )
 })
 
+app.get("/locations", (req, res) => {
+    return res.status(200).json(
+        {
+            success:true,
+            message:"locations"
+        }
+    )
+})
+
 
 app.listen(8080, () => {
     console.log("Server rodando na porta 8080")
